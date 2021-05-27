@@ -1,0 +1,13 @@
+/*
+ * main.css
+ * Created by Larry Tseng on 4/28/21.
+ */
+
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#main-content {
+    margin-top: 3rem;
+}
