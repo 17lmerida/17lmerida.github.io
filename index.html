@@ -7,52 +7,64 @@
 <html lang="en" class="h-100">
 <head>
     <link rel=icon href="images/favicon.png">
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Luis Merida 8)</title>
 </head>
-<body class="d-flex flex-column h-100" style="background-color: green;">
-    <div class="container" id="main-content">
-        <!-- HEADER -->
-        <div class="text-center">
-         <img src="https://cdn.usteamcolors.com/images/ncaa/division-1/umass-minutemen-logo.png">
-            <h2>Welcome to my portfolio.<span class="badge bg-secondary">Luis's Badge</span></h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/InstaStreet.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/peps.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/Resume.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            <p class="lead">This Is My Github Hosted Website!!</p>
-        </div>
-
-        <!-- PROJECTS -->
-        <div class="section" id="projects-section">
-            <h4 class="text-center">Projects</h4>
-        </div>
-
-        <!-- CONTACT -->
-        <div class="section" id="contact-section">
-            <h4 class="text-center">Contact</h4>
-        </div>
-
+<body class="d-flex flex-column h-100 main-color">
+  <div class="header">
+    <h1>Welcome to Luis' Website</h1>
+  </div>
+  <div class="row">
+    <div class="column middle">
+      <h2 class="center-txt">About me</h2>
+      <p>Informatics senior at the Univerity of Massachusetts Amherst</p>
     </div>
+    
+    <div class="column side">
+      <h2 class="center-txt">Hobbies</h2>
+      <div id="carouselExampleCaptions" class="carousel slide slides-border" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/InstaStreet.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><span class="about-bg">Part-time photographer</span></h5>
+              <p><span class="about-bg">Montreal, QC</span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/peps.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><span class="about-bg">Dog Walker</span></h5>
+              <p><span class="about-bg">Plum Island, MA</span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/favicon.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><span class="about-bg">My face</span></h5>
+              <p><span class="about-bg">My face</span></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
     <!-- FOOTER -->
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
@@ -61,5 +73,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
