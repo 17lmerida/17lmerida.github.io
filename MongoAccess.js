@@ -1,9 +1,12 @@
 "use strict"
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const fs = require('fs');
+//const { MongoClient, ServerApiVersion } = require('mongodb');
+import MongoClient from 'mongodb'
+import ServerApiVersion from 'mongodb'
+//const fs = require('fs');
+import fs from 'fs'
 
-const credentials = './Server/Creds.pem'
+const credentials = '/Server/Creds.pem'
 
 const client = new MongoClient('mongodb+srv://cluster0.4nvoo.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority', {
   sslKey: credentials,
