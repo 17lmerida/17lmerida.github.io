@@ -1,10 +1,7 @@
 
 
-//const { MongoClient, ServerApiVersion } = require('mongodb');
-import MongoClient from 'mongodb'
-import ServerApiVersion from 'mongodb'
-//const fs = require('fs');
-import fs from 'fs'
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const fs = require('fs');
 
 const credentials = '/Server/Creds.pem'
 
