@@ -1,4 +1,4 @@
-"use strict"
+
 
 //const { MongoClient, ServerApiVersion } = require('mongodb');
 import MongoClient from 'mongodb'
